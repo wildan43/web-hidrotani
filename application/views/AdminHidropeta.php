@@ -186,26 +186,37 @@
                     <div class="col-lg-8 col-xlg-9 col-md-12">
                         <div class="card">
                             <div class="card-body">
-                                <form class="form-horizontal form-material" action="SumbitHidropeta" method="post" enctype="multipart/form-data">
-                                    <div class="form-group mb-4">
-                                        <label class="col-md-12 p-0">Latitude</label>
-                                        <div class="col-md-8 border-bottom p-0">
-                                            <input type="text" name="Lat" id="Lat"
-                                                class="form-control p-0 border-0"> 
-                                            </div>
-                                        <label class="col-md-8 p-0">Longitude</label>
-                                        <div class="col-md-8 border-bottom p-0">
-                                            <input type="text" name="Long" id="Long"
-                                                class="form-control p-0 border-0"> 
-                                            </div>
-                                        <label class="col-md-12 p-0">URL</label>
-                                        <div class="col-md-12 border-bottom p-0">
-                                            <input type="text" name="url" id="url"
-                                                class="form-control p-0 border-0"> 
-                                            </div>
+                            <form class="form-horizontal form-material" action="<?php echo site_url('SumbitHidropeta')?>" method="post" enctype="multipart/form-data">
+                                <div class="form-group mb-4">
+                                    <label class="col-md-12 p-0">nama lokasi</label>
+                                    <div class="col-md-12 border-bottom p-0">
+                                        <input type="text" placeholder="nama" name="nama" id="nama" class="form-control p-0 border-0">
                                     </div>
+                                </div>
+                                    
+                                <div class="form-group mb-4">
+                                        <label class="col-md-12 p-0">Latitude</label>
+                                        <div class="col-md-12 border-bottom p-0">
+                                            <input type="text" placeholder="Lat" name="Lat" id="Lat"
+                                                class="form-control p-0 border-0"> </div>
+                                    </div>
+
+                                <div class="form-group mb-4">
+                                        <label class="col-md-12 p-0">Longitude</label>
+                                        <div class="col-md-12 border-bottom p-0">
+                                            <input type="text" placeholder="Long" name="Long" id="Long"
+                                                class="form-control p-0 border-0"> </div>
+                                    </div>
+
                                     <div class="form-group mb-4">
-                                        <label class="col-md-12 p-0">Gambar Hidropeta</label>
+                                        <label class="col-md-12 p-0">url</label>
+                                        <div class="col-md-12 border-bottom p-0">
+                                            <input type="text" placeholder="url" name="url" id="url"
+                                                class="form-control p-0 border-0"> </div>
+                                    </div>
+
+                                    <div class="form-group mb-4">
+                                        <label class="col-md-12 p-0">Gambar Artikel</label>
                                         <div class="col-md-12 border-bottom p-0">
                                             <label for="image">Pilih Gambar:</label>
                                             <input type="file" id="image" name="image" accept="image/*">
@@ -214,7 +225,7 @@
 
                                     <div class="form-group mb-4">
                                         <div class="col-sm-12 mt-4">
-                                            <button type="submit" class="btn btn-success">Submit Mark</button>
+                                        <button type="submit" name="submit" class="btn btn-success">Submit Marker</button>
                                         </div>
                                     </div>
                                 </form>
